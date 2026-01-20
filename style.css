@@ -690,57 +690,58 @@ footer{
 
 @media (max-width: 900px){
 
-	body{
-		margin: 5;
+	html, body{
 		line-height: 1.4;
-		margin: 2px;
+		overflow-x: hidden;
+		margin: 10px !important;
+		padding: 0;
 	}
 
 	/* HEADER */
 
+	nav{
+		margin-left: 10px !important;
+	}
+
+	header{
+		margin-left: 2px !important;
+	}
+
+	.my-code{
+		font-size: 24px;
+	}
+
+	.hero-section{
+		width: 80%;
+		margin-left: 10px;
+	}
+	
     .links{
-    	gap: 5px !important;
+    	gap: 8px !important;
     }
 
     .name{
-    	font-size: 10px;
+    	font-size: 10px !important;
     	padding: 2px 5px !important;
     }
-    
+
     main{
     grid-template-columns: repeat(1, minmax(500px, 500px)) !important;
 	}
 
     nav ul{
-    	gap: 2px !important;
+    	gap: 5px !important;
     }
 
     nav a{
     	font-size: 10px !important;
     }
 
-    .navbar {
-    	overflow-x: auto;
-    	white-space: nowrap;
-    	gap: 16px;
-    }
-
-    .nav-item {
-    	font-size: 14px;
-    	padding: 10px 0;
-    }
-
-    .navbar::-webkit-scrollbar {
-    	display: none;
-    }
-
-    .navbar {
-        -ms-overflow-style: none;  
-   		scrollbar-width: none;    
-    }
-
-
-    .contact-me{
+    .skills{
+		margin: 10px !important;
+	}
+	
+	.contact-me{
     	grid-template-columns: 1fr;
     }
 
@@ -751,5 +752,6 @@ footer{
     .skill-layout{
     	grid-template-columns: repeat(1, 1fr);
     }
+
 
 }
