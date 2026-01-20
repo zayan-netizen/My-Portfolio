@@ -688,73 +688,85 @@ footer{
 	padding: 0 4rem;
 }
 
-@media (max-width: 900px){
+@media (max-width: 900px) {
 
-	html, body{
-		line-height: 1.4;
-		overflow-x: hidden;
-		margin: 10px !important;
-		padding: 0;
-	}
+  * {
+    box-sizing: border-box;
+  }
 
-	/* HEADER */
-	.hero-section{
-		width: 60% !important;
-	}
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
 
-	nav{
-		margin-left: 10px !important;
-	}
+  /* HEADER & NAV */
+  header {
+    margin: 0;
+    padding: 10px;
+  }
 
-	header{
-		margin-left: 2px !important;
-	}
+  nav {
+    margin: 0;
+    padding: 0;
+  }
 
-	.my-code{
-		font-size: 24px;
-	}
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
 
-	.subtitle{
-		font-size: 14px !important;
-	}
-	
-    .links{
-    	gap: 8px !important;
-    }
+  nav a {
+    font-size: 12px;
+  }
 
-    .name{
-    	font-size: 10px !important;
-    	padding: 2px 5px !important;
-    }
+  /* HERO SECTION */
+  .hero-section {
+    width: 100%;         
+    max-width: 100%;
+    margin: 0 auto;       
+    padding: 10px;
+  }
 
-    main{
-    grid-template-columns: repeat(1, minmax(500px, 500px)) !important;
-	}
+  .my-code {
+    font-size: 22px;
+  }
 
-    nav ul{
-    	gap: 5px !important;
-    }
+  .subtitle {
+    font-size: 14px;
+  }
 
-    nav a{
-    	font-size: 10px !important;
-    }
+  /* MAIN GRID */
+  main {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 16px;
+    padding: 10px;
+  }
 
-    .skills{
-		margin: 10px !important;
-	}
-	
-	.contact-me{
-    	grid-template-columns: 1fr;
-    }
+  /* SKILLS & SECTIONS */
+  .skills {
+    margin: 0;
+    padding: 10px;
+  }
 
-    #about-me{
-    	grid-template-columns: repeat(1, 1fr);
-    }
+  .contact-me,
+  #about-me,
+  .skill-layout {
+    grid-template-columns: 1fr;
+  }
 
-    .skill-layout{
-    	grid-template-columns: repeat(1, 1fr);
-    }
+  .links {
+    justify-content: center;
+    gap: 8px;
+  }
 
-
+  .name {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
 }
+
 
