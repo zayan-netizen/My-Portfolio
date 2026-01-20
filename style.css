@@ -723,11 +723,12 @@ footer{
 	
   nav a {
     font-size: 12px;
+	margin-left: 5px;  
   }
 
   /* HERO SECTION */
   .hero-section {
-    width: 100%;
+    width: 70%;
     max-width: 100%;
     padding: 12px;
     margin: 0 auto;
@@ -777,7 +778,12 @@ footer{
     font-size: 12px;
     padding: 4px 8px;
   }
+
+  .skills, .projects{
+	  margin-top: -500px !important;
+  }
 }
+
 
 
 
