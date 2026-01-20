@@ -698,6 +698,9 @@ footer{
 	}
 
 	/* HEADER */
+	.hero-section{
+		width: 60% !important;
+	}
 
 	nav{
 		margin-left: 10px !important;
@@ -711,9 +714,8 @@ footer{
 		font-size: 24px;
 	}
 
-	.hero-section{
-		width: 80%;
-		margin-left: 10px;
+	.subtitle{
+		font-size: 14px !important;
 	}
 	
     .links{
@@ -755,3 +757,4 @@ footer{
 
 
 }
+
