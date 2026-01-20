@@ -706,28 +706,38 @@ footer{
     padding: 10px;
   }
 
-  nav {
-    margin: 0;
-    padding: 0;
+    nav {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   nav ul {
-    display: flex;
-    flex-wrap: wrap;
+    padding: 0;        
+    margin: 0;
+    width: 100%;
+    list-style: none;
     justify-content: center;
-    gap: 8px;
+	margin-bottom: 16px !important;
   }
-
+	
   nav a {
     font-size: 12px;
   }
 
   /* HERO SECTION */
   .hero-section {
-    width: 100%;         
+    width: 100%;
     max-width: 100%;
-    margin: 0 auto;       
-    padding: 10px;
+    padding: 12px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+
+  .hero-section * {
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .my-code {
@@ -768,5 +778,6 @@ footer{
     padding: 4px 8px;
   }
 }
+
 
 
