@@ -799,7 +799,7 @@ footer{
     display: flex;
     justify-content: center;
     gap: 10px;
-    padding-bottom: 26px;    
+    padding-bottom: 19px;    
   }
 
   nav button {
@@ -858,8 +858,8 @@ footer{
   }
 	
   .name h1{
-	  font-size: 18px;
-	  margin-left: -10px !important;
+	  font-size: 16px;
+	  margin-left: -15px !important;
   }
 	
   .my-code {
@@ -883,6 +883,7 @@ footer{
 	  margin-top: -900px !important;
   }
 }
+
 
 
 
