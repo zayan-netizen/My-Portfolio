@@ -731,8 +731,11 @@ footer{
   }
 
   nav {
-    margin: 0 !important;
+	margin: 0;  
+    margin-bottom: -20px !important;
+	margin-top: -40px !important;  
     padding: 0 !important;
+	padding-bottom: 14px;  
   }
 
   nav ul {
@@ -785,6 +788,8 @@ footer{
 
   .contact, .resume{
 	  padding: 2px 30px;
+	  font-size: 15px;
+	  height: 88% !important;
   }
 
   .quote{
@@ -792,7 +797,7 @@ footer{
   }
 	
   .name h1{
-	  font-size: 23px;
+	  font-size: 19px;
   }
 	
   .my-code {
@@ -815,7 +820,20 @@ footer{
   .skill-layout {
     grid-template-columns: 1fr;
   }
+
+  #skills, #projects{
+	  margin-top: -1000px;
+  }
+
+  .contact-card{
+	  margin: 10px;
+  }
+	
 }
+
+
+
+
 
 
 
