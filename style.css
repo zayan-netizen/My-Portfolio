@@ -778,18 +778,30 @@ footer{
   .hero-section {
     width: 100%;
     max-width: 360px;
-    margin: 0 auto;
+    margin: 15px auto;
     padding: 0;
     text-align: center;
   }
 
+  .contact, .resume{
+	  padding: 2px 30px;
+  }
+
+  .quote{
+	  padding: 20px;
+  }
+	
+  .name h1{
+	  font-size: 23px;
+  }
+	
   .my-code {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.25;
   }
 
   .subtitle {
-    font-size: 14px;
+    font-size: 11px;
     margin-top: 0;
   }
 
@@ -804,6 +816,7 @@ footer{
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
