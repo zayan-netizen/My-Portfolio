@@ -35,6 +35,26 @@ header{
 
 /* ICONS */
 
+.links {
+  gap: 12px;
+  padding: 0;
+}
+
+.links a {
+  padding: 6px;
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links svg {
+  width: 16px;
+  height: 16px;
+}
+
 .links{
 	display: flex;
 	flex-direction: row;
@@ -690,99 +710,92 @@ footer{
 
 @media (max-width: 900px) {
 
-  * {
-    box-sizing: border-box;
-  }
-
   html, body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
   }
 
-  /* HEADER & NAV */
-  header {
-    margin: 0;
-    padding: 10px;
-  }
-
-  nav svg {
-    width: 18px;
-    height: 18px;
-    font-size: 18px;   /* for font-icons */
-    flex-shrink: 0;
-  }
-	
-  nav {
-    position: static !important;    
-    transform: none !important;
-    left: auto !important;
-    right: auto !important;
-
-    width: 100%;
+  * {
     max-width: 100%;
-    margin: 0 auto;
-    padding: 8px 0;
+  }
 
-    display: flex;
-    justify-content: center;
-    overflow-x: hidden;
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 8px 12px;
+    transform: none !important;
+  }
+
+  nav {
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   nav ul {
     padding: 0;
     margin: 0;
-    width: auto;
-
+    width: 100%;
     display: flex;
     justify-content: center;
+    gap: 10px;
+  }
+
+  nav button {
+    font-size: 12px;
+  }
+
+  .links {
+    padding: 0;
+    gap: 8px;
+  }
+
+  .links a {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 8px;
+
+    display: flex;
     align-items: center;
-    gap: 6px;
-
-    list-style: none;
-	padding-bottom: 14px;  
+    justify-content: center;
   }
 
-  nav a {
-    font-size: 8px;
-	margin-left: 5px;  
+  .links svg {
+    width: 14px;
+    height: 14px;
   }
 
-  /* HERO SECTION */
+  main {
+    grid-template-columns: 1fr !important;
+    margin-top: 120px;
+    padding: 0 12px;
+  }
+
   .hero-section {
-    width: 80%;
-    max-width: 100%;
-    padding: 8px;
+    width: 100%;
+    max-width: 360px;
     margin: 0 auto;
-    overflow-x: hidden;
-  }
-
-  .hero-section * {
-    max-width: 100%;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    padding: 0;
+    text-align: center;
   }
 
   .my-code {
-    font-size: 22px;
+    font-size: 26px;
+    line-height: 1.25;
   }
 
   .subtitle {
     font-size: 14px;
+    margin-top: 0;
   }
 
-  /* MAIN GRID */
-  main {
-    display: grid;
-    grid-template-columns: 1fr; 
-    gap: 16px;
-    padding: 10px;
-  }
-
-  /* SKILLS & SECTIONS */
-  .skills {
-    margin: 0;
-    padding: 10px;
+  #skills h2,
+  #projects {
+    margin-top: 120px !important;
   }
 
   .contact-me,
@@ -790,32 +803,7 @@ footer{
   .skill-layout {
     grid-template-columns: 1fr;
   }
-
-  .links {
-    justify-content: center;
-    gap: 4px !important;
-  }
-
-  .name h1{
-    font-size: 12px !important;
-    padding: 0px 4px;
-  }
-
-  #skills, #projects{
-	  margin-top: -500px !important;
-  }
-	
-  .contact-me{
-	  padding: 8px;
-  }
-	
 }
-
-
-
-
-
-
 
 
 
