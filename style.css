@@ -726,13 +726,12 @@ footer{
     left: 0;
     width: 100% !important;
     margin: 0 !important;
-    padding: 8px 12px;
+    padding: 8px 2px;
     transform: none !important;
   }
 
   nav {
 	margin: 0;  
-    margin-bottom: -20px !important;
 	margin-top: -40px !important;  
     padding: 0 !important;
 	padding-bottom: 14px;  
@@ -748,7 +747,7 @@ footer{
   }
 
   nav button {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .links {
@@ -788,12 +787,12 @@ footer{
 
   .contact, .resume{
 	  padding: 2px 30px;
-	  font-size: 15px;
+	  font-size: 10px;
 	  height: 88% !important;
   }
 
   .quote{
-	  padding: 20px;
+	  padding-bottom: 10px !important;
   }
 	
   .name h1{
@@ -822,14 +821,15 @@ footer{
   }
 
   #skills, #projects{
-	  margin-top: -1000px;
+	  margin-top: -1000px !important;
   }
 
   .contact-card{
-	  margin: 10px;
+	  margin: 0 10px !important;
   }
 	
 }
+
 
 
 
