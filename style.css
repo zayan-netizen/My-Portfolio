@@ -794,6 +794,10 @@ footer{
   .quote{
 	  padding-bottom: 10px !important;
   }
+
+  .gandhi{
+	  padding-bottom: 10px !important;
+  }
 	
   .name h1{
 	  font-size: 19px;
@@ -829,6 +833,7 @@ footer{
   }
 	
 }
+
 
 
 
