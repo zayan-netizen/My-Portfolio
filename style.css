@@ -706,6 +706,13 @@ footer{
     padding: 10px;
   }
 
+  nav svg {
+    width: 18px;
+    height: 18px;
+    font-size: 18px;   /* for font-icons */
+    flex-shrink: 0;
+  }
+	
   nav {
     position: static !important;    
     transform: none !important;
@@ -802,6 +809,7 @@ footer{
   }
 	
 }
+
 
 
 
