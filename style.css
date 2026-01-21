@@ -732,9 +732,9 @@ footer{
 
   nav {
 	margin: 0;  
-	margin-top: -40px !important;  
+	margin-top: -50px !important;  
     padding: 0 !important;
-	padding-bottom: 14px;  
+	padding-bottom: 26px;  
   }
 
   nav ul {
@@ -792,7 +792,8 @@ footer{
   }
 
   .quote{
-	  padding-bottom: 10px !important;
+	  padding-bottom: 5px !important;
+	  max-height: 100%;
   }
 
   .gandhi{
@@ -800,7 +801,7 @@ footer{
   }
 	
   .name h1{
-	  font-size: 19px;
+	  font-size: 18px;
   }
 	
   .my-code {
@@ -810,12 +811,7 @@ footer{
 
   .subtitle {
     font-size: 11px;
-    margin-top: 0;
-  }
-
-  #skills h2,
-  #projects {
-    margin-top: 120px !important;
+    margin-top: -4px;
   }
 
   .contact-me,
@@ -825,14 +821,10 @@ footer{
   }
 
   #skills, #projects{
-	  margin-top: -1000px !important;
+	  margin-top: -830px !important;
   }
-
-  .contact-card{
-	  margin: 0 10px !important;
-  }
-	
 }
+
 
 
 
