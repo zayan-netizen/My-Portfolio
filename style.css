@@ -719,6 +719,7 @@ footer{
     list-style: none;
     justify-content: center;
 	margin-bottom: 16px !important;
+	gap: 6px !important;  
   }
 	
   nav a {
@@ -728,9 +729,9 @@ footer{
 
   /* HERO SECTION */
   .hero-section {
-    width: 70%;
+    width: 80%;
     max-width: 100%;
-    padding: 12px;
+    padding: 8px;
     margin: 0 auto;
     overflow-x: hidden;
   }
@@ -775,14 +776,20 @@ footer{
   }
 
   .name {
-    font-size: 12px;
-    padding: 4px 8px;
+    font-size: 8px !important;
+    padding: 0px 4px;
   }
 
-  .skills, .projects{
+  #skills, #projects{
 	  margin-top: -500px !important;
   }
+	
+  .contact-me{
+	  padding: 8px;
+  }
+	
 }
+
 
 
 
