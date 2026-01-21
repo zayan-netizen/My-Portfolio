@@ -718,8 +718,7 @@ footer{
     width: 100%;
     list-style: none;
     justify-content: center;
-	margin-bottom: 16px !important;
-	gap: 6px !important;  
+	margin-bottom: 16px !important; 
   }
 	
   nav a {
@@ -775,7 +774,7 @@ footer{
     gap: 8px;
   }
 
-  .name {
+  .name h1{
     font-size: 8px !important;
     padding: 0px 4px;
   }
@@ -789,6 +788,7 @@ footer{
   }
 	
 }
+
 
 
 
