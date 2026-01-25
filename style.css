@@ -112,6 +112,13 @@ main {
   align-items: center;  
 }
 
+/* STATUS */
+@keyframes pulse{
+	0% {transform: scale(1.0); opacity: 1; color: grey;}
+	50% {transform: scale(1.03); opacity: 0.98; color: darkgrey;}
+	100%{transform: scale(1.0); opacity: 1; color: grey;}
+}
+
 .status{
 	color: white;
 	text-align: center;
@@ -120,6 +127,7 @@ main {
 	border-radius: 20px;
 	display: inline-flex;
 	padding: 0px 10px;
+	animation: pulse 1s ease-in-out infinite;
 }
 
 .my-code{
@@ -172,8 +180,13 @@ main {
 	border-radius: 10px;
 	width: 75%;
 	height: 85%;
+	transition: 0.4s ease;
 }
 
+.quote:hover{
+	transform: translateY(-5px);
+	cursor: pointer;
+}
 .head-quote{
 	text-align: center;
 	font-size: 20px;
@@ -229,7 +242,7 @@ main {
 .resume:hover, .contact:hover {
 	box-shadow: 0 0 14px whitesmoke;
 	cursor: pointer;
-	transition: transformY(-2px);
+	transform: translateY(-4px);
 }
 
 /* NavBar  */
@@ -325,6 +338,11 @@ nav button:hover{
 	gap: 2rem;
 	background-color: #1B1B1B;
 	border-radius: 25px;
+	transition: 0.3s ease;
+}
+
+.profile-card:hover{
+	transform: translateY(-10px);
 }
 
 .name-text p{
@@ -342,6 +360,11 @@ nav button:hover{
 	padding: 28px;
 	border-radius: 24px;
 	gap: 18px;
+	transition: 0.3s ease;
+}
+
+.contact-card:hover{
+	transform: translateY(-15px);
 }
 
 .start{
@@ -556,6 +579,12 @@ nav button:hover{
   	border-radius: 25px;
   	border: 2px solid grey;
   	color: white;
+	transition: 0.3s ease;
+}
+
+.skill-layout li:hover{
+	transform: translateY(-3px);
+	cursor: pointer;
 }
 
 /* Certificates */
@@ -883,6 +912,7 @@ footer{
 	  margin-top: -940px !important;
   }
 }
+
 
 
 
