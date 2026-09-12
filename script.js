@@ -16,3 +16,39 @@ navItems.forEach(item => {
 		document.getElementById(targetid).classList.add("active")
 	});
 });
+
+const bootscreen = document.querySelector("#bootscreen");
+const portfolio = document.querySelector("#portfolio");
+const bootlines = document.querySelectorAll("#bootscreen p");
+
+function typeLine(line, text) {
+	return new Promise(resolve => {
+
+		let i = 0;
+
+		const interval = setInterval(() => {
+			line.textContent += text[i];
+			i++;
+			if(i===text.length){
+				clearInterval(interval);
+				resolve();
+			}
+		}, 90);
+	});
+}
+
+async function boot(){
+	for (const line of bootlines){
+		const text = line.textContent;
+		line.textContent = "";
+		line.style.opacity = "1";
+
+		await typeLine(line, text);
+	}
+
+	bootscreen.classList.add("hidden");
+	portfolio.classList.add("show");
+}
+
+boot();
+

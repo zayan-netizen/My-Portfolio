@@ -793,6 +793,68 @@ footer{
 	padding: 0 4rem;
 }
 
+#bootscreen {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    color: grey;
+    z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bootscreen-text{
+	border: 2px solid white;
+	padding: 50px;
+	border-radius: 10px;
+	width: 60%;
+	max-width: 250px;
+	height: 60%;
+	max-height: 300px;
+	font-family: monospace;
+}
+
+.boot-line{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.loader {
+	width: 12px;
+	height: 12px;
+	border: 2px solid white;
+	border-top-color: transparent;
+	border-radius: 50%;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.bootscreen-text p{
+	opacity: 0;
+}
+
+#bootscreen.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s ease;
+}
+
+#portfolio {
+    opacity: 0;
+}
+
+#portfolio.show {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
 @media (max-width: 900px) {
 
   html, body {
